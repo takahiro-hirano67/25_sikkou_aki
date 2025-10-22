@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自由ヶ丘執行委員会 秋の交流会</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/sanitize.css">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="brand">自由ヶ丘執行委員会</div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="content_wrapper">
+        <h1>秋の交流会 進行スライド</h1>
+
+        <!-- Canvaスライド -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGynTiBE_c/anxiqEPReVLEKP4GAbI-fw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGynTiBE_c&#x2F;anxiqEPReVLEKP4GAbI-fw&#x2F;view?utm_content=DAGynTiBE_c&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Canva</a>
+        <!-- Canvaスライド -->
+
+        <hr>
+        <h2>このペンを私に売ってください<br>お題抽選</h2>
+        <div class="section">
+            <div class="label">抽選対象の一覧:</div>
+            <div class="grid" id="variableGrid"></div>
+        </div>
+
+        <div class="section">
+            <div class="label">抽選されたお題:</div>
+            <div class="result" id="output" style="display: none;"></div>
+        </div>
+
+        <button class="Shuffle_button" onclick="showRandomVariables()">抽選する</button>
+        <hr>
+        <h3>【ヒントスライド】</h3>
+        <div class="link_button">
+            <a href="https://www.canva.com/design/DAG0bT9l9iE/jNV6fIWM-co2-p4-ZcXm8g/edit?utm_content=DAG0bT9l9iE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">ヒントスライドへのリンク</a>
+        </div>
+
+        <hr>
+        <h3>【各グループのセールストークへのリンク】</h3>
+        <ul>
+            <li class="link_button button_item">
+                <a href="https://docs.google.com/document/d/1KYVWamFxxL-MlKN677rqeexKw8RWmT-enjfB5ID03iI/edit?usp=sharing" target="_blank" rel="noopener">グループA</a>
+            </li>
+            <li class="link_button">
+                <a href="https://docs.google.com/document/d/1uqhP80r2ZZlvYDfzJ8MVR2JCiGGr8s7ZN8aTZWjzeiQ/edit?usp=sharing" target="_blank" rel="noopener">グループB</a>
+            </li>
+            <li class="link_button">
+                <a href="https://docs.google.com/document/d/18A9TcRd4UL8jwIkrmmAfFiLW2tLo-7TeIYyJmNugtAU/edit?usp=sharing" target="_blank" rel="noopener">グループC</a>
+            </li>
+            <li class="link_button">
+                <a href="https://docs.google.com/document/d/1jP2hevb9nhWrbZzhBj3exGQ_eA6AD6z-xYQawyCh8j0/edit?usp=sharing" target="_blank" rel="noopener">グループD</a>
+            </li>
+            <li class="link_button">
+                <a href="https://docs.google.com/document/d/1gZU7tLF27jHRMzgLiQIu_OpQ4whs54U4BXEFPHuXoxY/edit?usp=sharing" target="_blank" rel="noopener">グループE</a>
+            </li>
+        <hr>
+        <h3>【利用プロンプト】</h3>
+        <div class="link_button">
+            <a href="https://docs.google.com/document/d/1nEwu48KVutdkFDqs1eOC-_IO4AKi1jKbXVvKJuUzyzg/edit?usp=sharing" target="_blank" rel="noopener">プロンプト</a>
+        </div>
+        <hr>
+        <h3>【ChatGPTへのリンク】</h3>
+        <div class="link_button">
+            <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>
+        </div>
+        <hr>
+        <h3>【ビンゴへのリンク】</h3>
+        <div class="link_button">
+            <a href="bingo_2\index.html" target="_blank" rel="noopener">ビンゴ</a>
+        </div>
+    </div>
+
+
+    <!-- 以下コード -->
+    <script>
+        // 抽選対象の変数一覧（表示と抽選に使用）
+        const variables = [
+            "ボールペン",
+            "ただの石",
+            "板(材質不問)",
+            "りんご",
+            "木の枝",
+            "貝殻",
+            "紙飛行機",
+            "消しゴム",
+            "空のペットボトル",
+            "お菓子の袋",
+            "ティッシュの箱",
+            "割り箸",
+            "新聞紙",
+            "ビニール袋",
+            "イヤホン",
+            "ハンカチ"
+        ];
+
+        // グリッド表示用のコンテナ要素を取得
+        const gridContainer = document.getElementById("variableGrid");
+
+        // 初期表示：変数一覧をグリッド形式で描画
+        variables.forEach(item => {
+            const div = document.createElement("div"); // 各変数用の要素を作成
+            div.className = "grid-item";               // スタイル用クラスを設定
+            div.textContent = item;                    // 表示するテキストを設定
+            gridContainer.appendChild(div);            // グリッドに追加
+        });
+
+        // 抽選処理：ボタン押下時に呼び出される
+        function showRandomVariables() {
+            const items = document.querySelectorAll(".grid-item"); // すべての変数要素を取得
+
+            // 前回の抽選結果の強調表示をリセット
+            items.forEach(item => item.classList.remove("selected"));
+
+            // 抽選対象が2つ未満の場合はエラーメッセージを表示
+            if (variables.length < 2) {
+                document.getElementById("output").textContent = "抽選対象が足りません";
+                document.getElementById("output").style.display = "block";
+                return;
+            }
+
+            // 配列をシャッフルして先頭2つを抽選結果として選択
+            const shuffled = [...variables].sort(() => Math.random() - 0.5);
+            const selected = shuffled.slice(0, 1); // 1つ選択
+
+            // 抽選結果を画面に表示
+            document.getElementById("output").textContent = `${selected[0]}`;
+            document.getElementById("output").style.display = "block";
+
+            // 抽選された変数に強調表示用のクラスを付与
+            items.forEach(item => {
+                if (selected.includes(item.textContent)) {
+                    item.classList.add("selected");
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* 全体
+--------------------------------------------------*/
+* {
+    font-family: sans-serif;
+    color: #ff5500;
+    font-weight: bold;
+    
+}
+
+body {
+    background-color: #fff7cc;
+}
+
+
+/* 当選パネル
+--------------------------------------------------*/
+.panel {
+    width: 240px;
+    background-color: white;
+    border: #ff5500 3px solid; /*境界線を指定*/
+    
+    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-10%) translateX(-50%);
+    -webkit- transform: translateY(-10%) translateX(-50%);
+    
+    text-align: center;
+    font-size: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ボタン
+--------------------------------------------------*/
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateY(-42%) translateX(-50%);
+    -webkit- transform: translateY(-42%) translateX(-50%);
+}
+
+/* パネル
+--------------------------------------------------*/
+.log {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateY(-85%) translateX(-50%);
+    -webkit- transform: translateY(-85%) translateX(-50%);
+}
+
+.log ul {
+    display: table;
+    border-collapse:collapse; /*隣接する要素のborderを共有*/
+    width: 550px; /*幅を100%に*/
+    table-layout:fixed; /*中の要素の幅を均等に*/
+    margin: 0px;
+}
+
+.log ul li {
+    display: table-cell;
+    border:#aaa 1px solid; /*境界線を指定*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+/*数字じゃないやつ*/
+.none {
+    color: #aaa;
+}

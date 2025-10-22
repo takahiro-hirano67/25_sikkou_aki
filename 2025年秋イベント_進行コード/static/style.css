@@ -1,0 +1,143 @@
+body {
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.content_wrapper {
+    padding: 40px;
+    padding-top: 20px;
+}
+
+
+h1 {
+    color: #3e88cb;
+    margin-bottom: 30px;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #5ea6e8;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    border: 1px solid #3e88cb;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7fbff;
+}
+
+.grid-item {
+    border: 1px solid #3e88cb;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.grid-item.selected {
+    background-color: #d6eaff;
+    font-weight: bold;
+    border-color: #5ea6e8;
+}
+
+.result {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3e88cb;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #5ea6e8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #3e88cb;
+}
+
+.Shuffle_button {
+    margin-bottom: 20px;
+}
+
+/* アレンジ */
+
+.brand {
+    display: block;
+    margin-left: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #3e88cb;
+    font-size: 28px;
+}
+ 
+.site-header {
+    position: relative;
+    background-color: #d6eaff;
+}
+ 
+.site-header__wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ボタン */
+.link_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    margin:0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 25%), 0 2px 3px -2px rgb(0 0 0 / 15%);
+    background-color: #5ea6e8;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+.link_button a {
+    color: white;
+    text-decoration: none;
+}
+
+div.link_button, li.link_button {
+    margin-bottom: 10px;
+}
+
+
+
+.link_button:hover {
+    background-color: #2589d0;
+}
+

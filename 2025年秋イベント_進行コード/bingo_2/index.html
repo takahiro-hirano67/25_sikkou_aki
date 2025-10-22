@@ -1,0 +1,127 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>ビンゴ抽選機</title>
+        
+        <!--CSS-->
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+        <!--効果音-->
+        <audio src="slot.mp3" id="slot" loop play></audio>
+        <audio src="stop.mp3" id="stop" play></audio>
+        
+    </head>
+    
+    <body>
+        <!--当選パネル-->
+        <div class="panel" id="panel">0</div>
+        
+        <!--ボタン-->
+        <button class="btn" id="btn" onclick="slot()" onkeydown="">SPIN</button>
+        
+        <!--パネル-->
+        <div class="log">
+            <ul>
+                <li id="1">1</li>
+                <li id="2">2</li>
+                <li id="3">3</li>
+                <li id="4">4</li>
+                <li id="5">5</li>
+                <li id="6">6</li>
+                <li id="7">7</li>
+                <li id="8">8</li>
+                <li id="9">9</li>
+                <li id="10">10</li>
+            </ul>
+            <ul>
+                <li id="11">11</li>
+                <li id="12">12</li>
+                <li id="13">13</li>
+                <li id="14">14</li>
+                <li id="15">15</li>
+                <li id="16">16</li>
+                <li id="17">17</li>
+                <li id="18">18</li>
+                <li id="19">19</li>
+                <li id="20">20</li>
+            </ul>
+            <ul>
+                <li id="21">21</li>
+                <li id="22">22</li>
+                <li id="23">23</li>
+                <li id="24">24</li>
+                <li id="25">25</li>
+                <li id="26">26</li>
+                <li id="27">27</li>
+                <li id="28">28</li>
+                <li id="29">29</li>
+                <li id="30">30</li>
+            </ul>
+            <ul>
+                <li id="31">31</li>
+                <li id="32">32</li>
+                <li id="33">33</li>
+                <li id="34">34</li>
+                <li id="35">35</li>
+                <li id="36">36</li>
+                <li id="37">37</li>
+                <li id="38">38</li>
+                <li id="39">39</li>
+                <li id="40">40</li>
+            </ul>
+            <ul>
+                <li id="41">41</li>
+                <li id="42">42</li>
+                <li id="43">43</li>
+                <li id="44">44</li>
+                <li id="45">45</li>
+                <li id="46">46</li>
+                <li id="47">47</li>
+                <li id="48">48</li>
+                <li id="49">49</li>
+                <li id="50">50</li>
+            </ul>
+            <ul>
+                <li id="51">51</li>
+                <li id="52">52</li>
+                <li id="53">53</li>
+                <li id="54">54</li>
+                <li id="55">55</li>
+                <li id="56">56</li>
+                <li id="57">57</li>
+                <li id="58">58</li>
+                <li id="59">59</li>
+                <li id="60">60</li>
+            </ul>
+            <ul>
+                <li id="61">61</li>
+                <li id="62">62</li>
+                <li id="63">63</li>
+                <li id="64">64</li>
+                <li id="65">65</li>
+                <li id="66">66</li>
+                <li id="67">67</li>
+                <li id="68">68</li>
+                <li id="69">69</li>
+                <li id="70">70</li>
+            </ul>
+            <ul>
+                <li id="71">71</li>
+                <li id="72">72</li>
+                <li id="73">73</li>
+                <li id="74">74</li>
+                <li id="75">75</li>
+                <li class="none">-</li>
+                <li class="none">-</li>
+                <li class="none">-</li>
+                <li class="none">-</li>
+                <li class="none">-</li>
+            </ul>
+        </div>
+        
+        <!--自作JS-->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
